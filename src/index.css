@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply bg-[#1A1A1A] text-white box-border;
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-orange-900 rounded-xl;
+}
+
+.task > ::-webkit-scrollbar-thumb {
+  @apply bg-rose-500 rounded-xl;
+}
